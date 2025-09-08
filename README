@@ -1,0 +1,22 @@
+CRUDExample Solution -  A structured ASP.NET Core solution demonstrating clean architecture 
+                        and test-driven development for a simple CRUD application.
+
+
+The solution is organized into multiple projects following separation of concerns:
+
+    . CRUDExample (Web App) - ASP.NET Core application exposing the CRUD endpoints  
+    and handling requests.
+
+    . Entities - Domain models (e.g., Country) representing core business data.
+
+    . ServiceContracts - Interfaces and Data Transfer Objects (DTOs) 
+    that define contracts for services and enforce consistency between layers.
+
+    . Services - Concrete implementations of the business logic defined in ServiceContracts.
+
+    . CRUDTests - Unit tests (xUnit) ensuring correctness of business logic 
+    and validating service behavior.
+
+This structure makes the solution easy to maintain, extend, 
+and test, while adhering to clean architecture principles 
+(Domain → Contracts → Services → Application → Tests).
